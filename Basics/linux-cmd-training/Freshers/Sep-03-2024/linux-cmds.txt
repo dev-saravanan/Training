@@ -1,0 +1,2 @@
+To Edit a text file we can use nano editor
+$ nano file.txt

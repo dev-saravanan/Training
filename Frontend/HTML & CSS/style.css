@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.separation-line {
+    border-top: 1px solid #D3D3D3;
+}
+
+.main-bg-container {
+    min-height: 100vh;
+    background-color: #E6E6FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.web-design-request-card {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 1200px;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.card-title-container {
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+.card-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    color: #36454F;
+    margin: 0;
+}
+
+.card-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #36454F;
+    margin: 0;
+    margin-top: 8px;
+}
+
+
+
+
+/* Form Styles*/
+
+.input-main-container {
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name-input-item {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    padding-left: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-item {
+    width: 50%;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    margin-right: 12px;
+    padding-left: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.message-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: gray;
+    margin-top: 8px;
+}
+
+.main-label-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #36454F;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.name-inner-container {
+    display: flex;
+    align-items: start;
+    width: 100%;
+}
+
+.fname-input-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.lname-input-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 24px;
+}
+
+.select-input-item {
+    background-color: white;
+    width: 51%;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    padding: 0px 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.check-box-items {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.check-box-label {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: gray;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.text-area-item {
+    width: 100%;
+    height: 180px;
+    outline: none;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.submit-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.submit-btn {
+    border-radius: 4px;
+    width: 150px;
+    height: 36px;
+    border: 0;
+    color: white;
+    font-family: "Roboto";
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CBB17;
+}
+
+.submit-btn:hover {
+    background-color: #3ca30c;
+}
+
+@media (max-width: 768px) {
+
+    .input-item {
+        width: 100%;
+    }
+
+    .select-input-item {
+        width: 101%;
+    }
+}

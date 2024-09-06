@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-bg-container">
+        <div class="web-design-request-card">
+
+            <div class="card-title-container">
+                <h1 class="card-title">Website Design Request</h1>
+                <p class="card-description">Fill out the form to request a design</p>
+            </div>
+
+            <hr class="separation-line" />
+
+            <form>
+                <div class="input-main-container">
+                    <p class="main-label-text">Name</p>
+                    <div class="name-inner-container">
+                        <div class="fname-input-container">
+                            <input class="name-input-item" type="text" id="first-name" />
+                            <label class="message-text" for="first-name">First Name</label>
+                        </div>
+
+                        <div class="lname-input-container">
+                            <input class="name-input-item" type="text" id="last-name" />
+                            <label class="message-text" for="last-name">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-main-container">
+                    <label class="main-label-text" for="email-input">E-mail</label>
+                    <input class="input-item" id="email-input" type="email" placeholder="ex: myname@example.com" />
+                    <p class="message-text">example@example.com</p>
+                </div>
+
+                <div class="input-main-container">
+                    <label class="main-label-text" for="phone-input">Phone Number</label>
+                    <input class="input-item" id="phone-input" type="tel" />
+                </div>
+
+                <div class="input-main-container">
+                    <label class="main-label-text" for="company-input">Company</label>
+                    <input class="input-item" id="company-input" type="text" />
+                </div>
+
+                <div class="input-main-container">
+                    <label class="main-label-text" for="business-type-input">Type of Business</label>
+                    <select class="select-input-item" id="business-type-input">
+                        <option value="">Please Select</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                    </select>
+                </div>
+
+                <div class="input-main-container">
+                    <label class="main-label-text" for="website-type-input">Type of Website You Need?</label>
+                    <select class="select-input-item" id="website-type-input">
+                        <option value="">Please Select</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                    </select>
+                </div>
+
+                <div class="input-main-container">
+                    <p class="main-label-text">Choose Items for the Navigation Bar</p>
+
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="about-nav" name="nav-items" />
+                        <label class="check-box-label" for="about-nav">About</label>
+                    </div>
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="faq-nav" name="nav-items" />
+                        <label class="check-box-label" for="faq-nav">FAQ</label>
+                    </div>
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="user-guide-nav" name="nav-items" />
+                        <label class="check-box-label" for="user-guide-nav">User Guide</label>
+                    </div>
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="forum-nav" name="nav-items" />
+                        <label class="check-box-label" for="forum-nav">Forum</label>
+                    </div>
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="blog-nav" name="nav-items" />
+                        <label class="check-box-label" for="blog-nav">Blog</label>
+                    </div>
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="pricing-nav" name="nav-items" />
+                        <label class="check-box-label" for="pricing-nav">Pricing</label>
+                    </div>
+                </div>
+
+                <div class="input-main-container">
+                    <label class="main-label-text">More Items</label>
+                    <textarea class="text-area-item"></textarea>
+                </div>
+
+                <div class="input-main-container">
+                    <p class="main-label-text">Additional Services</p>
+
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="banner-service" name="additional-service" />
+                        <label class="check-box-label" for="banner-service">Banner Design</label>
+                    </div>
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="landing-page-service"
+                            name="additional-service" />
+                        <label class="check-box-label" for="landing-page-service">Landing Page Design</label>
+                    </div>
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="ads-management-service"
+                            name="additional-service" />
+                        <label class="check-box-label" for="ads-management-service">Advertisement Management</label>
+                    </div>
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="seo-service" name="additional-service" />
+                        <label class="check-box-label" for="seo-service">SEO</label>
+                    </div>
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="video-service" name="additional-service" />
+                        <label class="check-box-label" for="video-service">Video</label>
+                    </div>
+                    <div class="check-box-items">
+                        <input class="checkbox-input" type="checkbox" id="analytics-service"
+                            name="additional-service" />
+                        <label class="check-box-label" for="analytics-service">Analytics</label>
+                    </div>
+                </div>
+
+                <div class="input-main-container">
+                    <label class="main-label-text">Additional Comments</label>
+                    <textarea class="text-area-item"></textarea>
+                </div>
+
+
+
+
+                <hr class="separation-line" style="margin-top: 42px;" />
+
+                <div class="submit-btn-container">
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

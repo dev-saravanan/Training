@@ -14,6 +14,10 @@ const NavBar = () => {
             <li className="underline">
                 <Link to="/contact">Contact</Link>
             </li>
+
+            <li className="underline">
+                <Link to="/tasks">Task</Link>
+            </li>
         </ul>
     )
 }

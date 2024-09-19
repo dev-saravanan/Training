@@ -1,0 +1,91 @@
+import { type FC, type ReactNode, type PropsWithChildren} from "react"
+
+interface CourseGoalProps {
+    title: string;
+    children: ReactNode;
+}
+
+type CourseGoalProps = PropsWithChildren<{title: string}>;
+
+const CourseGoal: FC<CourseGoalProps> = ({ title, children }) => {
+    return (
+        <div>
+            <h1>{title}</h1>
+            {children}
+        </div>
+    )
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+useState is a Generic Type 
+
+type CourseGoal = {
+    title: string;
+    children: ReactNode;
+    id: number;
+}
+
+useState<CourseGoal[]>([])
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+import { type FormEvent } from "react"
+
+function handleSubmit(event: FormEvent) {
+
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+import { type FormEvent } from "react"
+
+function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    new FormData(event.currentTarget)
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Use null as default value while using useRef() to refer any HTML Element
+
+const goal = useRef(null);
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const goal = useRef<HTMLInputElement>(null);
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Adding ! (exclamatory) will ensure typescript that the object will definitely contain a value and it will not be null
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Handling Form in a better way using useRef()
+
+To get a value :-
+const goalInputValue = goal.current!.value; // The exclamatory here is explained before
+
+To reset a value in field
+event.currentTarget.reset()
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+import { ComponentPropsWithoutRef } from "react"
+
+type InputProps = {
+    id: string;
+    label: string;
+} & ComponentPropsWithoutRef<"input">;
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const Input = forwardRef<HTMLInputElement, {props type should be here}>(
+    function Input(props) {
+        // Block of code
+    }
+)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
